@@ -26,11 +26,10 @@ def index():
     return jsonify(DISPLAY)
 
 
-@app.route('/set',  methods=['GET', 'POST'])
+@app.route('/set',  methods=['POST'])
 def set():
     global DISPLAY
     req_data = request.get_json()
-    DISPLAY = get_empty_display()
 
     if len(req_data):
 

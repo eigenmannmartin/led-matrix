@@ -30,6 +30,7 @@ def index():
 def set():
     global DISPLAY
     req_data = request.get_json()
+    DISPLAY = get_empty_display()  # Set display to all zero. If we want to keep the state, comment this line
 
     if len(req_data):
 

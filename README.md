@@ -3,12 +3,13 @@
 The led-matrix will update its state according to the mqtt messages it receives. It is by default configured to use hivemq (any other mqtt server would work) and listen on topic `ledtest/#`
 You can have a look at this topic with the web [online client](http://www.hivemq.com/demos/websocket-client/)
 ```
-| LED-Matrix |<--| HiveMQ-MQTT |<--| Python Server |
+| LED-Matrix |<--| HiveMQ-MQTT |<--| Python Server |
 ```
 
 The messages need to be valid json. It is an array or arrays of arrays. (row => col => [r, g, b])
 See the server implementation for details.
 
+![Demo](/demo.gif)
 
 ## RPI setup
 ### Install dependencies

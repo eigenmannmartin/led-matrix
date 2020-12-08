@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def get_empty_display():
     return [
-        [[255, 255, 255] for y in range(32)] for x in range(8)
+        [[0, 0, 0] for y in range(32)] for x in range(8)
     ]
 
 
